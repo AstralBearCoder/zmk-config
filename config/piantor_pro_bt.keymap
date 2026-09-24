@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -101,6 +100,62 @@
             bindings = <&none>;
             label = "ITREM";
         };
+
+        iCir: iCir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ICIR";
+        };
+
+        aCir: aCir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ACIR";
+        };
+
+        oCir: oCir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "OCIR";
+        };
+
+        eCir: eCir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ECIR";
+        };
+
+        uCir: uCir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "UCIR";
+        };
+
+        aGrv: aGrv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "AGRV";
+        };
+
+        eGrv: eGrv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "EGRV";
+        };
+
+        uGrv: uGrv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "UGRV";
+        };
     };
 
     keymap {
@@ -130,7 +185,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LC(Z)  &kp LC(Y)  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp DELETE  &trans  &kp RA(Z)  &kp RA(N)  &bt BT_SEL 2  &oe  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
+&trans  &kp LC(Z)  &kp LC(Y)  &kp RA(P)  &kp RA(Y)  &none  &kp RA(U)  &iCir  &eCir  &uGrv  &uCir  &kp DELETE  &trans  &kp RA(Z)  &kp RA(N)  &oe  &eTrem  &kp RA(Q)  &kp RA(O)  &kp RA(COMMA)  &aGrv  &eGrv  &kp RA(E)  &trans  &trans  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp RA(I)  &aCir  &oCir  &iTrem  &kp RA(A)  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
             >;
         };
 
