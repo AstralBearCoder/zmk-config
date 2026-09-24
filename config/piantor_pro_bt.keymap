@@ -15,13 +15,61 @@
 
 / {
     behaviors {
-        Virgule_Pinterr: Virgule_Pinterr {
+        Virg_Inter: Virg_Inter {
             compatible = "zmk,behavior-mod-morph";
-            label = "VIRGULE_PINTERR";
+            label = "VIRG_INTER";
             bindings = <&kp COMMA>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        Point_Excl: Point_Excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POINT_EXCL";
+            bindings = <&kp PERIOD>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        Colon_Scl: Colon_Scl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLON_SCL";
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
+    macros {
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "QU";
+        };
+
+        Mqu: Mqu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "MQU";
+        };
+
+        ApoSpc: Apo_Gui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS &kp SPACE>;
+            label = "APO_GUI";
+        };
+
+        GuiSpc: GuiSpc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+            label = "GUISPC";
         };
     };
 
@@ -38,7 +86,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&sys_reset  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &kp SINGLE_QUOTE  &kp O  &kp U  &kp X  &kp BSPC  &bootloader  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp SQT  &kp LEFT_WIN  &kp Q  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &kp COMMA  &kp DOT  &kp COLON  &kp LS(LC(ESC))  &sl 1  &kp LEFT_SHIFT  &kp LCTRL  &sl 3  &lt 4 SPACE  &kp LEFT_ALT
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &kp SINGLE_QUOTE  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp SQT  &kp LEFT_WIN  &kp Q  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &kp COMMA  &kp DOT  &kp COLON  &kp LS(LC(ESC))  &sl 1  &kp LEFT_SHIFT  &kp LCTRL  &sl 3  &lt 4 SPACE  &kp LEFT_ALT
             >;
         };
 
