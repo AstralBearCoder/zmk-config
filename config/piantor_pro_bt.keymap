@@ -96,14 +96,14 @@
         eTrem: eTrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(RA(SQT)) &kp E>;
+            bindings = <&kp LS(APOSTROPHE) &kp E>;
             label = "ETREM";
         };
 
         iTrem: iTrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(RA(APOSTROPHE)) &kp I>;
+            bindings = <&kp LS(APOSTROPHE) &kp I>;
             label = "ITREM";
         };
 
@@ -162,6 +162,90 @@
             bindings = <&kp GRAVE &kp U>;
             label = "UGRV";
         };
+
+        FlowLauncher: FlowLauncher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "FLOWLAUNCHER";
+        };
+
+        alt_tab: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "NEW_MACRO";
+        };
+
+        ScreenShot: ScreenShot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_GUI>;
+
+            label = "SCREENSHOT";
+        };
+
+        Double_Par: Double_Par {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+
+            label = "Double_Par";
+        };
+
+        Double_Cro: Double_Cro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+
+            label = "Double_Cro";
+        };
+
+        Double_Acc: Double_Acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+
+            label = "Double_Acc";
+        };
+
+        CtrlMajTab: CtrlMajTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LCTRL)>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LS(LCTRL)>;
+
+            label = "CTRLMAJTAB";
+        };
     };
 
     combos {
@@ -175,6 +259,11 @@
         Power {
             bindings = <&kp C_POWER>;
             key-positions = <36 37 38 39 40 41>;
+        };
+
+        ScreenShot {
+            bindings = <&none>;
+            key-positions = <38 39>;
         };
     };
 
@@ -191,7 +280,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &kp Q  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sl 1  &kp LEFT_SHIFT  &kp LCTRL  &sl 2  &lt 3 SPACE  &kp LEFT_ALT
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sl 1  &kp LEFT_SHIFT  &kp LCTRL  &sl 2  &lt 3 SPACE  &kp LEFT_ALT
             >;
         };
 
@@ -205,7 +294,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LC(Z)  &kp LC(Y)  &kp RA(P)  &kp RA(Y)  &none  &kp RA(U)  &iCir  &eCir  &uGrv  &uCir  &kp DELETE  &trans  &kp RA(Z)  &kp RA(N)  &oe  &eTrem  &kp RA(Q)  &kp RA(O)  &kp RA(COMMA)  &aGrv  &eGrv  &kp RA(E)  &trans  &trans  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp RA(I)  &aCir  &oCir  &iTrem  &kp RA(A)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(Y)  &kp RA(P)  &kp RA(Y)  &none  &kp RA(U)  &iCir  &eCir  &uGrv  &uCir  &kp DELETE  &alt_tab  &kp RA(Z)  &kp RA(N)  &oe  &eTrem  &kp RA(Q)  &kp RA(O)  &kp RA(COMMA)  &aGrv  &eGrv  &kp RA(E)  &trans  &CtrlMajTab  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp RA(I)  &aCir  &oCir  &iTrem  &kp RA(A)  &trans  &trans  &trans  &trans  &trans  &trans  &FlowLauncher
             >;
         };
 
@@ -219,7 +308,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp DOLLAR  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &none  &kp UNDERSCORE  &kp AT_SIGN  &kp SLASH  &kp MINUS  &trans  &trans  &Mqu  &kp RA(N5)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &none  &kp HASH  &kp PERCENT  &kp PIPE  &kp AMPERSAND  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE  &kp ASTERISK  &Double_Cro  &kp RIGHT_BRACKET  &kp CARET  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp DOLLAR  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp RIGHT_PARENTHESIS  &kp GRAVE  &none  &kp UNDERSCORE  &kp AT_SIGN  &kp SLASH  &kp MINUS  &trans  &trans  &Mqu  &kp RA(N5)  &Double_Acc  &kp RIGHT_BRACE  &none  &none  &kp HASH  &kp PERCENT  &kp PIPE  &kp AMPERSAND  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
