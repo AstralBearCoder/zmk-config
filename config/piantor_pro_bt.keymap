@@ -246,6 +246,20 @@
 
             label = "CTRLMAJTAB";
         };
+
+        BH_CTm: BH_CTm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp T>;
+            label = "BH_CTM";
+        };
+
+        BH_BRm: BH_BRm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp R>;
+            label = "BH_BRM";
+        };
     };
 
     combos {
@@ -267,6 +281,18 @@
             bindings = <&ScreenShot>;
             key-positions = <38 39>;
             layers = <1 0 3 2 4 5>;
+        };
+
+        BH_CT {
+            bindings = <&BH_CTm>;
+            key-positions = <4 15>;
+            layers = <0 1 3 2>;
+        };
+
+        BH_BR {
+            bindings = <&BH_BRm>;
+            key-positions = <1 14>;
+            layers = <1 0 2 3>;
         };
     };
 
