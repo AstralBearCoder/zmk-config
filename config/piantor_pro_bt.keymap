@@ -254,16 +254,19 @@
         GamingToggle {
             bindings = <&tog 4>;
             key-positions = <36 37 38>;
+            layers = <0 2 1 3 4 5>;
         };
 
         Power {
             bindings = <&kp C_POWER>;
             key-positions = <36 37 38 39 40 41>;
+            layers = <1 0 3 4 2 5>;
         };
 
         ScreenShot {
-            bindings = <&none>;
+            bindings = <&ScreenShot>;
             key-positions = <38 39>;
+            layers = <1 0 3 2 4 5>;
         };
     };
 
@@ -271,7 +274,7 @@
         compatible = "zmk,keymap";
 
         Layer0_Base {
-            display-name = "Rosellae";
+            display-name = "0_Rosellae";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -285,7 +288,7 @@
         };
 
         Layer1_Accents {
-            display-name = "Rosellae";
+            display-name = "1_Rosellae";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -299,7 +302,7 @@
         };
 
         Layer2_Symbol {
-            display-name = "Rosellae";
+            display-name = "2_Rosellae";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -313,42 +316,21 @@
         };
 
         Layer3_Nav {
-            display-name = "Rosellae";
+            display-name = "3_Rosellae";
             bindings = <
 &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp END  &none  &none  &kp HOME  &kp F2  &kp F4  &kp F11  &kp DELETE  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp PAGE_DOWN  &kp PAGE_UP  &kp COMMA  &kp N4  &kp N5  &kp N6  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N0  &kp PERCENT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PERIOD  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Layer4_Gaming {
-            display-name = "Rosellae";
+            display-name = "4_Rosellae";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp R  &kp UP_ARROW  &kp SPACE  &kp SPACE  &kp UP_ARROW  &kp R
             >;
         };
 
         Layer5_Arabic {
-            display-name = "Rosellae";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
+            display-name = "5_Rosellae";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
