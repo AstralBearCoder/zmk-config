@@ -41,6 +41,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        ApoGui: ApoGui {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOGUI";
+            bindings = <&ApoSpc>, <&GuiSpc>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -71,12 +80,33 @@
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "GUISPC";
         };
+
+        oe: oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "OE";
+        };
+
+        eTrem: eTrem {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ETREM";
+        };
+
+        iTrem: iTrem {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ITREM";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        BaseLayer {
+        Layer0_Base {
             display-name = "Rosellae";
 
             // --------------------------------------------------------------------------------
@@ -86,12 +116,12 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &kp SINGLE_QUOTE  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp SQT  &kp LEFT_WIN  &kp Q  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &kp COMMA  &kp DOT  &kp COLON  &kp LS(LC(ESC))  &sl 1  &kp LEFT_SHIFT  &kp LCTRL  &sl 3  &lt 4 SPACE  &kp LEFT_ALT
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &kp Q  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sl 1  &kp LEFT_SHIFT  &kp LCTRL  &sl 2  &lt 3 SPACE  &kp LEFT_ALT
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        Layer1_Accents {
+            display-name = "Rosellae";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -100,12 +130,12 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &kp LSHFT  &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
+&trans  &kp LC(Z)  &kp LC(Y)  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp DELETE  &trans  &kp RA(Z)  &kp RA(N)  &bt BT_SEL 2  &oe  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        Layer2_Symbol {
+            display-name = "Rosellae";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -118,22 +148,22 @@
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        Layer3_Nav {
+            display-name = "Rosellae";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        Layer4_Gaming {
+            display-name = "Rosellae";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        Layer5_Arabic {
+            display-name = "Rosellae";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
