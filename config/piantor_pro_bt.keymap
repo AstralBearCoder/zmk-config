@@ -55,14 +55,14 @@
         qu: qu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp Q &kp U>;
             label = "QU";
         };
 
         Mqu: Mqu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(Q) &kp U>;
             label = "MQU";
         };
 
@@ -83,7 +83,14 @@
         oe: oe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings =
+                <&macro_press>,
+                <&none &kp>,
+                <&macro_press>,
+                <&kp>,
+                <&macro_press>,
+                <&macro_press>;
+
             label = "OE";
         };
 
