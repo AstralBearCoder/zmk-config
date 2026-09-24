@@ -85,11 +85,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&none &kp>,
-                <&macro_press>,
-                <&kp>,
-                <&macro_press>,
-                <&macro_press>;
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "OE";
         };
@@ -97,70 +97,70 @@
         eTrem: eTrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(RA(SQT)) &kp E>;
             label = "ETREM";
         };
 
         iTrem: iTrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(RA(APOSTROPHE)) &kp I>;
             label = "ITREM";
         };
 
         iCir: iCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp CARET &kp I>;
             label = "ICIR";
         };
 
         aCir: aCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp CARET &kp A>;
             label = "ACIR";
         };
 
         oCir: oCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp CARET &kp O>;
             label = "OCIR";
         };
 
         eCir: eCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp CARET &kp E>;
             label = "ECIR";
         };
 
         uCir: uCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp CARET &kp U>;
             label = "UCIR";
         };
 
         aGrv: aGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp GRAVE &kp A>;
             label = "AGRV";
         };
 
         eGrv: eGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp GRAVE &kp E>;
             label = "EGRV";
         };
 
         uGrv: uGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp GRAVE &kp U>;
             label = "UGRV";
         };
     };
