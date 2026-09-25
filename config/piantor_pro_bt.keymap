@@ -276,6 +276,24 @@
 
             label = "SHUTDOWN";
         };
+
+        DoubleInt: DoubleInt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(RA(QUESTION)) &kp QUESTION &kp LEFT>;
+
+            label = "DOUBLEINT";
+        };
+
+        DoubleExc: DoubleExc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(RA(N1)) &kp EXCL &kp LEFT>;
+
+            label = "DOUBLEEXC";
+        };
     };
 
     combos {
@@ -353,7 +371,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &kp ASTERISK  &Double_Cro  &kp RIGHT_BRACKET  &kp CARET  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp DOLLAR  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp RIGHT_PARENTHESIS  &kp GRAVE  &none  &kp UNDERSCORE  &kp AT_SIGN  &kp SLASH  &kp MINUS  &trans  &trans  &Mqu  &kp RA(N5)  &Double_Acc  &kp RIGHT_BRACE  &none  &none  &kp HASH  &kp PERCENT  &kp PIPE  &kp AMPERSAND  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE  &kp ASTERISK  &Double_Cro  &kp RIGHT_BRACKET  &kp CARET  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp DOLLAR  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp PIPE  &kp UNDERSCORE  &kp AT_SIGN  &kp SLASH  &kp MINUS  &trans  &trans  &Mqu  &kp RA(N5)  &Double_Acc  &kp RIGHT_BRACE  &none  &kp AMPERSAND  &kp PERCENT  &DoubleInt  &DoubleExc  &kp HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
