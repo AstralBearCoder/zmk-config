@@ -280,9 +280,7 @@
         DoubleInt: DoubleInt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LS(RA(QUESTION)) &kp QUESTION &kp LEFT>;
+            bindings = <&macro_tap>, <&kp RA(QUESTION) &kp QUESTION &kp LEFT>;
 
             label = "DOUBLEINT";
         };
@@ -290,7 +288,7 @@
         DoubleExc: DoubleExc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(RA(N1)) &kp EXCL &kp LEFT>;
+            bindings = <&macro_tap>, <&kp RA(N1) &kp EXCL &kp LEFT>;
 
             label = "DOUBLEEXC";
         };
