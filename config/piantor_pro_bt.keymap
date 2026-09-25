@@ -280,7 +280,7 @@
         DoubleInt: DoubleInt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RA(QUESTION) &kp QUESTION &kp LEFT>;
+            bindings = <&macro_tap>, <&kp RA(SLASH) &kp QUESTION &kp LEFT>;
 
             label = "DOUBLEINT";
         };
