@@ -294,6 +294,90 @@
 
             label = "DOUBLEEXC";
         };
+
+        Environ: Environ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ENVIRON";
+        };
+
+        Fois: Fois {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "FOIS";
+        };
+
+        Tir_Point: Tir_Point {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TIR_POINT";
+        };
+
+        Degree: Degree {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DEGREE";
+        };
+
+        FlecheDr: FlecheDr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "FLECHEDR";
+        };
+
+        PasEgale: PasEgale {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_8 &kp KP_NUMBER_0 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PASEGALE";
+        };
     };
 
     combos {
@@ -371,7 +455,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &kp ASTERISK  &Double_Cro  &kp RIGHT_BRACKET  &kp CARET  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp DOLLAR  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp PIPE  &kp UNDERSCORE  &kp AT_SIGN  &kp SLASH  &kp MINUS  &trans  &trans  &Mqu  &kp RA(N5)  &Double_Acc  &kp RIGHT_BRACE  &none  &kp AMPERSAND  &kp PERCENT  &DoubleInt  &DoubleExc  &kp HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(N5)  &kp DOLLAR  &Double_Cro  &kp CARET  &Fois  &Tir_Point  &kp LESS_THAN  &kp GREATER_THAN  &kp HASH  &kp NON_US_BACKSLASH  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp ASTERISK  &FlecheDr  &Degree  &kp UNDERSCORE  &kp MINUS  &kp AT_SIGN  &kp SLASH  &trans  &trans  &Mqu  &Environ  &Double_Acc  &kp GRAVE  &PasEgale  &none  &kp PERCENT  &DoubleInt  &DoubleExc  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
