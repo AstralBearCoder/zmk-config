@@ -52,7 +52,7 @@
         eETrem: eETrem {
             compatible = "zmk,behavior-mod-morph";
             label = "EETREM";
-            bindings = <&eTrem>, <&ETrem>;
+            bindings = <&eTrem>, <&cETrem>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -61,7 +61,7 @@
         iITrem: iITrem {
             compatible = "zmk,behavior-mod-morph";
             label = "IITREM";
-            bindings = <&iTrem>, <&ITrem>;
+            bindings = <&iTrem>, <&cITrem>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -70,7 +70,7 @@
         iICir: iICir {
             compatible = "zmk,behavior-mod-morph";
             label = "IICIR";
-            bindings = <&iCir>, <&ICir>;
+            bindings = <&iCir>, <&cICir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -79,7 +79,7 @@
         aACir: aACir {
             compatible = "zmk,behavior-mod-morph";
             label = "AACIR";
-            bindings = <&aCir>, <&ACir>;
+            bindings = <&aCir>, <&cACir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -88,7 +88,7 @@
         oOCir: oOCir {
             compatible = "zmk,behavior-mod-morph";
             label = "OOCIR";
-            bindings = <&oCir>, <&OCir>;
+            bindings = <&oCir>, <&cOCir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -97,7 +97,7 @@
         eECir: eECir {
             compatible = "zmk,behavior-mod-morph";
             label = "EECIR";
-            bindings = <&eCir>, <&ECir>;
+            bindings = <&eCir>, <&cECir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -106,7 +106,7 @@
         uUcir: uUcir {
             compatible = "zmk,behavior-mod-morph";
             label = "UUCIR";
-            bindings = <&uCir>, <&Ucir>;
+            bindings = <&uCir>, <&cUcir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -115,7 +115,7 @@
         aAGrv: aAGrv {
             compatible = "zmk,behavior-mod-morph";
             label = "AAGRV";
-            bindings = <&aGrv>, <&AGrv>;
+            bindings = <&aGrv>, <&cAGrv>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -124,7 +124,7 @@
         eEGrv: eEGrv {
             compatible = "zmk,behavior-mod-morph";
             label = "EEGRV";
-            bindings = <&eGrv>, <&EGrv>;
+            bindings = <&eGrv>, <&cEGrv>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -133,7 +133,7 @@
         uUGrv: uUGrv {
             compatible = "zmk,behavior-mod-morph";
             label = "UUGRV";
-            bindings = <&uGrv>, <&UGrv>;
+            bindings = <&uGrv>, <&cUGrv>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -142,7 +142,7 @@
         oeOE: oeOE {
             compatible = "zmk,behavior-mod-morph";
             label = "OEOE";
-            bindings = <&oe>, <&OE>;
+            bindings = <&oe>, <&cOE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -476,77 +476,77 @@
             label = "PASEGALE";
         };
 
-        ETrem: ETrem {
+        cETrem: ETrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(APOSTROPHE) &kp LS(E)>;
             label = "ETREM";
         };
 
-        ITrem: ITrem {
+        cITrem: ITrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(APOSTROPHE) &kp LS(I)>;
             label = "ITREM";
         };
 
-        ICir: ICir {
+        cICir: ICir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(I)>;
             label = "ICIR";
         };
 
-        ACir: ACir {
+        cACir: ACir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(A)>;
             label = "ACIR";
         };
 
-        OCir: OCir {
+        cOCir: OCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(O)>;
             label = "OCIR";
         };
 
-        ECir: ECir {
+        cECir: ECir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(E)>;
             label = "ECIR";
         };
 
-        Ucir: Ucir {
+        cUcir: Ucir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(U)>;
             label = "UCIR";
         };
 
-        AGrv: AGrv {
+        cAGrv: AGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(A)>;
             label = "AGRV";
         };
 
-        EGrv: EGrv {
+        cEGrv: EGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(E)>;
             label = "EGRV";
         };
 
-        UGrv: UGrv {
+        cUGrv: UGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(U)>;
             label = "UGRV";
         };
 
-        OE: OE {
+        cOE: OE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
