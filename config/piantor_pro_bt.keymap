@@ -476,77 +476,77 @@
             label = "PASEGALE";
         };
 
-        cETrem: ETrem {
+        cETrem: cETrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(APOSTROPHE) &kp LS(E)>;
-            label = "ETREM";
+            label = "cETrem";
         };
 
-        cITrem: ITrem {
+        cITrem: cITrem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(APOSTROPHE) &kp LS(I)>;
-            label = "ITREM";
+            label = "cITrem";
         };
 
-        cICir: ICir {
+        cICir: cICir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(I)>;
-            label = "ICIR";
+            label = "cICir";
         };
 
-        cACir: ACir {
+        cACir: cACir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(A)>;
-            label = "ACIR";
+            label = "cACir";
         };
 
-        cOCir: OCir {
+        cOCir: cOCir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(O)>;
-            label = "OCIR";
+            label = "cOCir";
         };
 
-        cECir: ECir {
+        cECir: cECir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(E)>;
-            label = "ECIR";
+            label = "cECir";
         };
 
-        cUcir: Ucir {
+        cUcir: cUcir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(U)>;
-            label = "UCIR";
+            label = "cUcir";
         };
 
-        cAGrv: AGrv {
+        cAGrv: cAGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(A)>;
-            label = "AGRV";
+            label = "cAGrv";
         };
 
-        cEGrv: EGrv {
+        cEGrv: cEGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(E)>;
-            label = "EGRV";
+            label = "cEGrv";
         };
 
-        cUGrv: UGrv {
+        cUGrv: cUGrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(U)>;
-            label = "UGRV";
+            label = "cUGrv";
         };
 
-        cOE: OE {
+        cOE: cOE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -557,7 +557,7 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "OE";
+            label = "cOE";
         };
     };
 
