@@ -608,7 +608,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &kp LEFT_ALT  &lt 3 SPACE  &sl 2
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &mt LEFT_ALT SPACE  &sl 2
             >;
         };
 
@@ -636,7 +636,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &kp RA(N5)  &kp DOLLAR  &Double_Cro  &kp CARET  &kp TILDE  &Tir_Point  &kp LESS_THAN  &kp GREATER_THAN  &kp HASH  &kp NON_US_BACKSLASH  &kp DELETE  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp ASTERISK  &FlecheDr  &Degree  &kp UNDERSCORE  &kp MINUS  &kp AT_SIGN  &kp SLASH  &trans  &trans  &Mqu  &Fois  &Double_Acc  &kp GRAVE  &none  &none  &kp PERCENT  &DoubleInt  &DoubleExc  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(N5)  &kp DOLLAR  &Double_Cro  &kp CARET  &kp TILDE  &Tir_Point  &kp LESS_THAN  &kp GREATER_THAN  &kp HASH  &kp NON_US_BACKSLASH  &trans  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp ASTERISK  &FlecheDr  &Degree  &kp UNDERSCORE  &kp MINUS  &kp AT_SIGN  &kp SLASH  &trans  &trans  &Mqu  &Fois  &Double_Acc  &kp GRAVE  &none  &none  &kp PERCENT  &DoubleInt  &DoubleExc  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
