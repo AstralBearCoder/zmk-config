@@ -154,6 +154,13 @@
             #binding-cells = <0>;
             bindings = <&sl 2>, <&kp LEFT_ALT>;
         };
+
+        o_and_ougrv: o_and_ougrv {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O_AND_OUGRV";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&ougrv>;
+        };
     };
 
     macros {
@@ -566,6 +573,13 @@
 
             label = "cOE";
         };
+
+        ougrv: ougrv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &uGrv &kp SPACE>;
+            label = "OUGRV";
+        };
     };
 
     combos {
@@ -615,7 +629,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &kp LS(SPACE)  &AltGR_alt
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &o_and_ougrv  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &kp LS(SPACE)  &AltGR_alt
             >;
         };
 
@@ -629,7 +643,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LC(Z)  &kp LC(Y)  &kp RA(P)  &kp RA(Y)  &none  &kp RA(U)  &iICir  &eECir  &uUGrv  &uUcir  &kp DELETE  &alt_tab  &kp RA(Z)  &kp RA(N)  &oeOE  &eETrem  &kp RA(Q)  &kp RA(O)  &kp RA(COMMA)  &aAGrv  &eEGrv  &kp RA(E)  &trans  &CtrlMajTab  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp RA(I)  &aACir  &oOCir  &iITrem  &kp RA(A)  &trans  &trans  &trans  &trans  &trans  &trans  &FlowLauncher
+&trans  &kp LC(Z)  &kp LC(Y)  &kp RA(P)  &kp RA(Y)  &none  &uUGrv  &iICir  &eECir  &uUcir  &kp RA(O)  &kp DELETE  &alt_tab  &kp RA(Z)  &kp RA(N)  &oeOE  &eETrem  &kp RA(Q)  &kp RA(U)  &kp RA(COMMA)  &aAGrv  &eEGrv  &kp RA(E)  &trans  &CtrlMajTab  &kp Q  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &iITrem  &aACir  &oOCir  &kp RA(I)  &kp RA(A)  &trans  &trans  &trans  &trans  &trans  &FlowLauncher  &FlowLauncher
             >;
         };
 
