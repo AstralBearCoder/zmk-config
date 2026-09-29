@@ -577,7 +577,7 @@
         ougrv: ougrv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp O &uGrv &kp SPACE>;
+            bindings = <&macro_tap>, <&kp O &kp GRAVE &kp U &kp SPACE>;
 
             label = "OUGRV";
         };
