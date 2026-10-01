@@ -160,6 +160,8 @@
             label = "O_AND_OUGRV";
             #binding-cells = <0>;
             bindings = <&kp U>, <&ougrv>;
+
+            tapping-term-ms = <100>;
         };
     };
 
