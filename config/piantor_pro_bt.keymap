@@ -656,7 +656,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &kp RA(N5)  &kp DOLLAR  &Double_Cro  &kp CARET  &kp TILDE  &Tir_Point  &kp LESS_THAN  &kp GREATER_THAN  &kp HASH  &kp NON_US_BACKSLASH  &trans  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp ASTERISK  &FlecheDr  &Degree  &kp UNDERSCORE  &kp MINUS  &kp AT_SIGN  &kp SLASH  &trans  &trans  &Mqu  &Fois  &Double_Acc  &kp GRAVE  &none  &none  &kp PERCENT  &DoubleInt  &DoubleExc  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(N5)  &kp DOLLAR  &Double_Cro  &kp CARET  &kp TILDE  &Tir_Point  &kp LESS_THAN  &kp GREATER_THAN  &kp AMPERSAND  &kp NON_US_BACKSLASH  &trans  &trans  &kp PLUS  &kp EQUAL  &Double_Par  &kp ASTERISK  &FlecheDr  &Degree  &kp UNDERSCORE  &kp MINUS  &kp AT_SIGN  &kp SLASH  &trans  &trans  &Mqu  &Fois  &Double_Acc  &kp GRAVE  &none  &kp HASH  &kp PERCENT  &DoubleInt  &DoubleExc  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
