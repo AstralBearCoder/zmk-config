@@ -147,6 +147,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        Altgralt: Altgralt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALTGRALT";
+            #binding-cells = <0>;
+            bindings = <&sl 2>, <&kp LEFT_ALT>;
+        };
     };
 
     macros {
@@ -595,7 +602,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &mt LEFT_ALT S  &kp F  &kp Y  &mt LEFT_ALT H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &kp LS(SPACE)  &none
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &kp S  &kp F  &kp Y  &kp S  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &kp LS(SPACE)  &Altgralt
             >;
         };
 
