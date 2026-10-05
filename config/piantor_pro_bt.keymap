@@ -147,13 +147,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        AltGR_alt: AltGR_alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ALTGR_ALT";
-            #binding-cells = <0>;
-            bindings = <&sl 2>, <&kp LEFT_ALT>;
-        };
     };
 
     macros {
@@ -583,18 +576,6 @@
             layers = <1 0 3 2 4 5>;
         };
 
-        BH_CT {
-            bindings = <&BH_CTm>;
-            key-positions = <4 15>;
-            layers = <0 1 3 2>;
-        };
-
-        BH_BR {
-            bindings = <&BH_BRm>;
-            key-positions = <1 14>;
-            layers = <1 0 2 3>;
-        };
-
         ougrvc {
             bindings = <&ougrv>;
             key-positions = <7 8 9>;
@@ -614,7 +595,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &mt LEFT_ALT S  &kp F  &kp Y  &mt LEFT_ALT H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &kp LS(SPACE)  &AltGR_alt
+&kp ESCAPE  &kp B  &kp L  &kp D  &kp C  &kp V  &kp Z  &ApoGui  &kp O  &kp U  &kp X  &kp BSPC  &kp TAB  &kp N  &kp R  &kp T  &mt LEFT_ALT S  &kp F  &kp Y  &mt LEFT_ALT H  &kp E  &kp I  &kp A  &kp ENTER  &kp LEFT_WIN  &qu  &kp J  &kp M  &kp G  &kp W  &kp K  &kp P  &Virg_Inter  &Point_Excl  &Colon_Scl  &kp LC(LSHIFT)  &sk LEFT_SHIFT  &sl 1  &kp LCTRL  &sl 3  &kp LS(SPACE)  &none
             >;
         };
 
