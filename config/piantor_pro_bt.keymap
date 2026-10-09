@@ -635,7 +635,7 @@
         Layer4_Gaming {
             display-name = "4_Rosellae";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp R  &kp UP_ARROW  &kp SPACE  &kp SPACE  &kp UP_ARROW  &kp R
+&caps_word  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp R  &kp UP_ARROW  &kp SPACE  &kp SPACE  &kp UP_ARROW  &kp R
             >;
         };
 
