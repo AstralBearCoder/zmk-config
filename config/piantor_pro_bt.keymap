@@ -562,12 +562,6 @@
     combos {
         compatible = "zmk,combos";
 
-        GamingToggle {
-            bindings = <&tog 4>;
-            key-positions = <36 37 38>;
-            layers = <0 2 1 3 4 5>;
-        };
-
         Power {
             bindings = <&kp LA(F4)>;
             key-positions = <39 40 41>;
@@ -576,7 +570,7 @@
 
         ScreenShot {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <38 39>;
+            key-positions = <36 37>;
             layers = <1 0 3 2 4 5>;
         };
 
